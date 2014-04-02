@@ -1,4 +1,4 @@
-ultisnippets
+Ultisnippets
 ============
 
 Rukbotto's UltiSnips snippets
