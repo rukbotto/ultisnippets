@@ -1,0 +1,76 @@
+snippet pk "Package"
+package `!v expand('%:h:t')`;
+endsnippet
+
+snippet cl "Class"
+class `!v expand('%:t:r')`
+{
+	${2:// Class attributes}
+}
+endsnippet
+
+snippet co "Constructor"
+public function new(${3})
+{
+	${4:// Initialize attributes}
+}
+endsnippet
+
+snippet at "Attribute"
+${1:private} var ${2:attribute}:${3:Int};
+endsnippet
+
+snippet pr "Property"
+${1:public} var ${2:property}(${3:null},${4:null}):${5:Int};
+endsnippet
+
+snippet cn "Constant"
+${1:public} static inline var ${2:CONSTANT}:${3:Int} = ${4:0};
+endsnippet
+
+snippet fx "Function"
+${1:public} ${2:static }function ${3:functionName}(${4})${5}
+{
+	${6:// Function body}
+}
+endsnippet
+
+snippet i "If"
+if (${1})
+{
+	${2:// If body}
+}
+endsnippet
+
+snippet e "Else"
+else
+{
+	${1:// Else body}
+}
+endsnippet
+
+snippet ei "Else-if"
+else if (${1})
+{
+	${2:// Else-if body}
+}
+endsnippet
+
+snippet fr "For"
+for (i in 0...${1:1})
+{
+	${2:// For body}
+}
+endsnippet
+
+snippet sw "Switch"
+switch (${1})
+{
+	${2:// Switch body}
+}
+endsnippet
+
+snippet cs "Case"
+case ${1:1}:${2: // Case body}
+endsnippet
+
