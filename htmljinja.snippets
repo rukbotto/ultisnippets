@@ -1,15 +1,43 @@
+snippet ex "Extends"
+{% extends "${1}" %}
+endsnippet
+
+snippet in "Include"
+{% include "${1}" %}
+endsnippet
+
 snippet v "Variable"
 {{ ${1} }}
 endsnippet
 
-snippet b "Block"
+snippet sb "Start block"
 {% block ${1} %}
-${2}
+endsnippet
+
+snippet eb "End block"
 {% endblock %}
 endsnippet
 
-snippet i "If"
+snippet si "Start if"
 {% if ${1} %}
-${2}
+endsnippet
+
+snippet eli "Else if"
+{% elif ${1} %}
+endsnippet
+
+snippet els "Else"
+{% else %}
+endsnippet
+
+snippet ei "End if"
 {% endif %}
+endsnippet
+
+snippet sf "Start for"
+{% for ${1} in ${2} %}
+endsnippet
+
+snippet ef "End for"
+{% endfor %}
 endsnippet
