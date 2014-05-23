@@ -17,19 +17,19 @@ public function new(${1})
 endsnippet
 
 snippet at "Attribute"
-${1:private} var ${2:attribute}:${3:Int};
+${1:private }var ${2:attribute}:${3:Int};
 endsnippet
 
 snippet pr "Property"
-${1:public} var ${2:property}(${3:null},${4:null}):${5:Int};
+${1:public }var ${2:property}(${3:null},${4:null}):${5:Int};
 endsnippet
 
-snippet cn "Constant"
-${1:public} static inline var ${2:CONSTANT}:${3:Int} = ${4:0};
+snippet st "Static var"
+${1:public }static ${2:inline }var ${3:CONSTANT}:${4:Int} = ${5:0};
 endsnippet
 
 snippet fx "Function"
-${1:public} ${2:static }function ${3:functionName}(${4})${5}
+${1:public }${2:static }function ${3:functionName}(${4})${5}
 {
 	${6:// Function body}
 }
@@ -81,3 +81,15 @@ snippet cs "Case"
 case ${1:1}:${2: // Case body}
 endsnippet
 
+snippet td "Typedef"
+${1:public }typedef ${2:<T>} = {
+	${3:// Typedef body}
+}
+endsnippet
+
+snippet en "Enum"
+${1:public }enum ${2:<T>}
+{
+	${3:// Enum body}
+}
+endsnippet
