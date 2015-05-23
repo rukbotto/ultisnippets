@@ -1,47 +1,46 @@
-snippet ex "Extends"
+snippet extends "Extend from template"
 {% extends "${1}" %}
 endsnippet
 
-snippet in "Include"
+snippet include "Include"
 {% include "${1}" %}
 endsnippet
 
-snippet v "Variable"
+snippet var "Variable" i
 {{ ${1} }}
 endsnippet
 
-snippet sb "Start block"
+snippet block "Block"
 {% block ${1} %}
-endsnippet
-
-snippet eb "End block"
+${2}
 {% endblock %}
 endsnippet
 
-snippet si "Start if"
-{% if ${1} %}
+snippet if "If" i
+{% if ${1} %}${2}{% endif %}
 endsnippet
 
-snippet eli "Else if"
+snippet elif "Else if" i
 {% elif ${1} %}
 endsnippet
 
-snippet els "Else"
+snippet else "Else" i
 {% else %}
 endsnippet
 
-snippet ei "End if"
-{% endif %}
+snippet for "For" i
+{% for ${1} in ${2} %}${3}{% endfor %}
 endsnippet
 
-snippet sf "Start for"
-{% for ${1} in ${2} %}
-endsnippet
-
-snippet ef "End for"
-{% endfor %}
-endsnippet
-
-snippet st "Set"
+snippet set "Set"
 {% set ${1} %}
 endsnippet
+
+snippet trans "Translatable string" i
+{% trans %}${1}{% endtrans %}
+endsnippet
+
+snippet at "Tag attribute" i
+${1:attr}="${2}"
+endsnippet
+
