@@ -19,9 +19,7 @@ snippet csrf "CSRF Token Tag"
 endsnippet
 
 snippet block "Block"
-{% ${1:block} ${2} %}
-${3}
-{% end$1 %}
+{% ${1:block} ${2} %}${3}{% end$1 %}
 endsnippet
 
 snippet var "Variable" i
@@ -65,9 +63,7 @@ snippet url "Url tag" i
 endsnippet
 
 snippet com "Comment"
-{% comment %}
-${1}
-{% endcomment %}
+{% comment %}${1}{% endcomment %}
 endsnippet
 
 snippet cycle "Cycle tag"
@@ -79,12 +75,14 @@ snippet menu "Show menu"
 endsnippet
 
 snippet with "With"
-{% with ${1} %}
-${2}
-{% endwith %}
+{% with ${1} %}${2}{% endwith %}
 endsnippet
 
 snippet include "Include"
 {% include "${1}" %}
+endsnippet
+
+snippet urlp "Page url" i
+{% page_url ${1} %}
 endsnippet
 
