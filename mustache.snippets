@@ -1,0 +1,21 @@
+priority 1
+
+snippet var "Variable"
+{{ $1 }}$0
+endsnippet
+
+snippet section "Section"
+{{# $1 }}
+	$2
+{{/ $1 }}$0
+endsnippet
+
+snippet invert "Inverted section"
+{{^ $1 }}
+	$2
+{{/ $1 }}$0
+endsnippet
+
+snippet partial "Partial"
+{{> $1 }}$0
+endsnippet
