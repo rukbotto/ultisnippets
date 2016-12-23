@@ -1,21 +1,21 @@
 priority 1
 
-snippet var "Variable"
+snippet { "Variable" i
 {{ $1 }}$0
 endsnippet
 
-snippet section "Section"
+snippet # "Section"
 {{# $1 }}
 	$2
 {{/ $1 }}$0
 endsnippet
 
-snippet invert "Inverted section"
+snippet ^ "Inverted section"
 {{^ $1 }}
 	$2
 {{/ $1 }}$0
 endsnippet
 
-snippet partial "Partial"
+snippet > "Partial"
 {{> $1 }}$0
 endsnippet
