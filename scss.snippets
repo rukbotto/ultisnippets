@@ -1,15 +1,31 @@
 priority 1
 
-snippet media "Bourbon media query"
+snippet row "Row"
+@include row();$0
+endsnippet
+
+snippet cols "Columns"
+@include span-columns($1);$0
+endsnippet
+
+snippet shift "Shift"
+@include shift($1);$0
+endsnippet
+
+snippet media "Media query"
 @include media($1) {
 	$2
 }$0
 endsnippet
 
-snippet margin "Bourbon margin"
+snippet margin "Margin"
 @include margin($1);$0
 endsnippet
 
-snippet pad "Bourbon padding"
+snippet pad "Padding"
 @include padding($1);$0
+endsnippet
+
+snippet pos "Position"
+@include position($1);$0
 endsnippet
