@@ -1,31 +1,35 @@
 priority 1
 
 snippet row "Row"
-@include row();$0
+@include row();
 endsnippet
 
 snippet cols "Columns"
-@include span-columns($1);$0
+@include span-columns($1);
 endsnippet
 
 snippet shift "Shift"
-@include shift($1);$0
+@include shift($1);
 endsnippet
 
 snippet media "Media query"
 @include media($1) {
-	$2
-}$0
+	$0
+}
 endsnippet
 
 snippet margin "Margin"
-@include margin($1);$0
+@include margin(${1:${2:null} ${3:null} ${4:null} ${5:null}});
 endsnippet
 
 snippet pad "Padding"
-@include padding($1);$0
+@include padding(${1:${2:null} ${3:null} ${4:null} ${5:null}});
 endsnippet
 
 snippet pos "Position"
-@include position($1);$0
+@include position($1);
+endsnippet
+
+snippet trans "Transition"
+@include transition($1);
 endsnippet
