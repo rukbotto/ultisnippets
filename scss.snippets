@@ -5,11 +5,11 @@ snippet row "Row"
 endsnippet
 
 snippet cols "Columns"
-@include span-columns($1);
+@include span-columns($0);
 endsnippet
 
 snippet shift "Shift"
-@include shift($1);
+@include shift($0);
 endsnippet
 
 snippet media "Media query"
@@ -27,9 +27,13 @@ snippet pad "Padding"
 endsnippet
 
 snippet pos "Position"
-@include position($1);
+@include position($0);
 endsnippet
 
 snippet trans "Transition"
-@include transition($1);
+@include transition($0);
+endsnippet
+
+snippet clear "Clearfix"
+@include clearfix();
 endsnippet
