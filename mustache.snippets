@@ -4,7 +4,7 @@ snippet { "Variable" i
 {{ $0 }}
 endsnippet
 
-snippet {{ "Raw variable" i
+snippet [ "Raw variable" i
 {{{ $0 }}}
 endsnippet
 
@@ -12,10 +12,24 @@ snippet # "Section" i
 {{# $1 }}$0{{/ $1 }}
 endsnippet
 
+snippet #v "Visual section" i
+{{# $1 }}
+	${VISUAL}
+{{/ $1 }}
+endsnippet
+
 snippet ^ "Inverted section"
 {{^ $1 }}$0{{/ $1 }}
 endsnippet
 
-snippet > "Partial"
+snippet > "Partial" i
 {{> $0 }}
+endsnippet
+
+snippet ! "Comment tag"
+{{! ${VISUAL}
+endsnippet
+
+snippet !} "Comment"
+{{! ${VISUAL} }}
 endsnippet
