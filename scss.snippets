@@ -12,9 +12,13 @@ snippet shift "Shift"
 @include shift($0);
 endsnippet
 
+snippet omega "Omega"
+@include omega($0);
+endsnippet
+
 snippet media "Media query"
 @include media($1) {
-	$0
+	${VISUAL}$0
 }
 endsnippet
 
@@ -36,4 +40,10 @@ endsnippet
 
 snippet clear "Clearfix"
 @include clearfix();
+endsnippet
+
+snippet dir "Direction context"
+@include direction-context(${1:right-to-left}) {
+	${VISUAL}$0
+}
 endsnippet
