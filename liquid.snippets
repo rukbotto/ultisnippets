@@ -1,13 +1,17 @@
 priority 1
 
-snippet for "For" i
-{% for $1 in $2 %}$0{% endfor%}
-endsnippet
-
 snippet { "Variable" i
 {{ $0 }}
 endsnippet
 
+snippet assign "Assign"
+{% assign $1 = $0 %}
+endsnippet
+
+snippet for "For" i
+{% for $1 in $2 %}${VISUAL}$0{% endfor%}
+endsnippet
+
 snippet if "If" i
-{% if $1 %}$0{% endif %}
+{% if $1 %}${VISUAL}$0{% endif %}
 endsnippet
