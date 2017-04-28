@@ -13,17 +13,25 @@ snippet assign "Assign"
 endsnippet
 
 snippet for "For" i
-{% for $1 in $2 %}${VISUAL}$0{% endfor%}
+{% for $1 in $2 %}${VISUAL}$0{% endfor %}
 endsnippet
 
 snippet if "If" i
 {% if $1 %}${VISUAL}$0{% endif %}
 endsnippet
 
-snippet ife "If-else" i
-{% if $1 %}${VISUAL}$2{% else %}$0{% endif %}
+snippet else "Else" i
+{% else %}
 endsnippet
 
-snippet include "Include"
+snippet elsif "Else if" i
+{% elsif $0 %}
+endsnippet
+
+snippet include "Include" i
 {% include $0 %}
+endsnippet
+
+snippet unless "Unless" i
+{% unless $1 %}${VISUAL}$0{% endunless %}
 endsnippet
