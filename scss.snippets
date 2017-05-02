@@ -4,7 +4,7 @@ snippet row "Row"
 @include row();
 endsnippet
 
-snippet cols "Columns"
+snippet span-col "Columns"
 @include span-columns($0);
 endsnippet
 
@@ -23,14 +23,14 @@ snippet media "Media query"
 endsnippet
 
 snippet margin "Margin"
-@include margin(${1:${2:null} ${3:null} ${4:null} ${5:null}});
+@include margin($0);
 endsnippet
 
-snippet pad "Padding"
-@include padding(${1:${2:null} ${3:null} ${4:null} ${5:null}});
+snippet padding "Padding"
+@include padding($0);
 endsnippet
 
-snippet pos "Position"
+snippet position "Position"
 @include position($0);
 endsnippet
 
@@ -38,11 +38,11 @@ snippet trans "Transition"
 @include transition($0);
 endsnippet
 
-snippet clear "Clearfix"
+snippet clearfix "Clearfix"
 @include clearfix();
 endsnippet
 
-snippet dir "Direction context"
+snippet direction "Direction context"
 @include direction-context(${1:right-to-left}) {
 	${VISUAL}$0
 }
