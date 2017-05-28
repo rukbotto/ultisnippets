@@ -1,50 +1,51 @@
-snippet extends "Extend from template"
-{% extends "${1}" %}
+snippet {{ "Variable" i
+{{ $1 }}$0
 endsnippet
 
-snippet include "Include"
-{% include "${1}" %}
-endsnippet
-
-snippet var "Variable" i
-{{ ${1} }}
-endsnippet
-
-snippet block "Block"
-{% block ${1} %}
-${2}
-{% endblock %}
+snippet {% "Tag" i
+{% $1 %}$0
 endsnippet
 
 snippet if "If" i
-{% if ${1} %}${2}{% endif %}
+{% if $1 %}${VISUAL}$2{% endif %}$0
 endsnippet
 
 snippet elif "Else if" i
-{% elif ${1} %}
+{% elif $1 %}$0
 endsnippet
 
 snippet else "Else" i
-{% else %}
+{% else %}$0
 endsnippet
 
 snippet for "For" i
-{% for ${1} in ${2} %}${3}{% endfor %}
+{% for $1 in $2 %}${VISUAL}$3{% endfor %}$0
+endsnippet
+
+snippet block "Block"
+{% block $1 %}${VISUAL}$2{% endblock %}$0
+endsnippet
+
+snippet extends "Extend from template"
+{% extends "$1" %}$0
+endsnippet
+
+snippet include "Include"
+{% include "$1" %}$0
 endsnippet
 
 snippet set "Set"
-{% set ${1} %}
+{% set $1 %}$0
 endsnippet
 
 snippet trans "Translatable string" i
-{% trans %}${1}{% endtrans %}
+{% trans %}${VISUAL}$1{% endtrans %}$0
 endsnippet
 
 snippet at "Tag attribute" i
-${1:attr}="${2}"
+${1:attr}="$2"$0
 endsnippet
 
-snippet com "Comment" i
-{#${1}#}
+snippet {# "Comment" i
+{# ${VISUAL}$1 #}$0
 endsnippet
-

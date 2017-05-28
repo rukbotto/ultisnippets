@@ -1,49 +1,49 @@
 priority 1
 
 snippet row "Row"
-@include row();
+@include row();$0
 endsnippet
 
 snippet span-col "Columns"
-@include span-columns($0);
+@include span-columns($1);$0
 endsnippet
 
 snippet shift "Shift"
-@include shift($0);
+@include shift($1);$0
 endsnippet
 
 snippet omega "Omega"
-@include omega($0);
+@include omega($1);$0
 endsnippet
 
 snippet media "Media query"
 @include media($1) {
-	${VISUAL}$0
-}
+	${VISUAL}$2
+}$0
 endsnippet
 
 snippet margin "Margin"
-@include margin($0);
+@include margin($1);$0
 endsnippet
 
 snippet padding "Padding"
-@include padding($0);
+@include padding($1);$0
 endsnippet
 
 snippet position "Position"
-@include position($0);
+@include position($1);$0
 endsnippet
 
 snippet trans "Transition"
-@include transition($0);
+@include transition($1);$0
 endsnippet
 
 snippet clearfix "Clearfix"
-@include clearfix();
+@include clearfix();$0
 endsnippet
 
 snippet direction "Direction context"
 @include direction-context(${1:right-to-left}) {
-	${VISUAL}$0
-}
+	${VISUAL}$2
+}$0
 endsnippet

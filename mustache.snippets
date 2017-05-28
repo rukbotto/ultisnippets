@@ -1,29 +1,29 @@
 priority 1
 
-snippet { "Variable" i
-{{ $0 }}
+snippet {{ "Variable" i
+{{ $1 }}$0
 endsnippet
 
-snippet [ "Raw variable" i
-{{{ $0 }}}
+snippet {{{ "Raw variable" i
+{{{ $1 }}}$0
 endsnippet
 
-snippet # "Section" i
-{{# $1 }}${VISUAL}$0{{/ $1 }}
+snippet {{# "Section" i
+{{# $1 }}${VISUAL}$2{{/ $1 }}$0
 endsnippet
 
-snippet ^ "Inverted section"
-{{^ $1 }}$0{{/ $1 }}
+snippet {{^ "Inverted section"
+{{^ $1 }}$2{{/ $1 }}$0
 endsnippet
 
-snippet > "Partial" i
-{{> $0 }}
+snippet {{> "Partial" i
+{{> $1 }}$0
 endsnippet
 
-snippet ! "Comment tag"
+snippet {{! "Comment start"
 {{! ${VISUAL}$0
 endsnippet
 
-snippet !} "Comment"
-{{! ${VISUAL}$0 }}
+snippet !}} "Comment"
+{{! ${VISUAL}$1 }}$0
 endsnippet

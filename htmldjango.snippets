@@ -1,88 +1,67 @@
 snippet for "For"
-{% for ${1} in ${2} %}${3}{% endfor %}
+{% for $1 in $2 %}${VISUAL}$3{% endfor %}$0
 endsnippet
 
 snippet if "If" i
-{% if ${1} %}${2}{% endif %}
+{% if $1 %}${VISUAL}$2{% endif %}$0
 endsnippet
 
 snippet else "Else" i
-{% else %}
+{% else %}$0
 endsnippet
 
-snippet eli "Elif" i
-{% elif ${1} %}
+snippet elif "Elif" i
+{% elif $1 %}$0
 endsnippet
 
-snippet csrf "CSRF Token Tag"
-{% csrf_token %}
+snippet {% "Tag"
+{% $1 %}$0
 endsnippet
 
-snippet block "Block"
-{% ${1:block} ${2} %}${3}{% end$1 %}
+snippet {{ "Variable" i
+{{ $1 }}$0
 endsnippet
 
-snippet var "Variable" i
-{{ ${1} }}
+snippet block "Block" i
+{% block %}${VISUAL}$1{% endblock %}$0
 endsnippet
 
-snippet static "Static asset" i
-{% static "${1}" %}
+snippet csrf_token "CSRF Token"
+{% csrf_token %}$0
 endsnippet
 
-snippet load "Load tag libs"
-{% load ${1} %}
+snippet static "Static" i
+{% static "$1" %}$0
 endsnippet
 
-snippet extends "Extend from template"
-{% extends "${1}" %}
+snippet load "Load"
+{% load $1 %}$0
 endsnippet
 
-snippet thumb "Insert a thumbnail" i
-{% thumbnail ${1} %}
+snippet extends "Extends"
+{% extends "$1" %}$0
 endsnippet
 
-snippet ph "Placeholder"
-{% placeholder "${1}" %}
+snippet attr "Tag attribute" i
+${1:attr}="$2"$0
 endsnippet
 
-snippet sph "Static Placeholder"
-{% static_placeholder "${1}" %}
+snippet url "Url" i
+{% url $1 %}$0
 endsnippet
 
-snippet toolbar "Django CMS toolbar"
-{% cms_toolbar %}
-endsnippet
-
-snippet at "Tag attribute" i
-${1:attr}="${2}"
-endsnippet
-
-snippet url "Url tag" i
-{% url ${1} %}
-endsnippet
-
-snippet com "Comment"
-{% comment %}${1}{% endcomment %}
+snippet comment "Comment"
+{% comment %}${VISUAL}$1{% endcomment %}$0
 endsnippet
 
 snippet cycle "Cycle tag"
-{% cycle ${1} %}
-endsnippet
-
-snippet menu "Show menu"
-{% show_menu ${1} %}
+{% cycle $1 %}$0
 endsnippet
 
 snippet with "With"
-{% with ${1} %}${2}{% endwith %}
+{% with $1 %}$2{% endwith %}$0
 endsnippet
 
 snippet include "Include"
-{% include "${1}" %}
+{% include "$1" %}$0
 endsnippet
-
-snippet urlp "Page url" i
-{% page_url ${1} %}
-endsnippet
-

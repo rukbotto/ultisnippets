@@ -1,37 +1,37 @@
 priority 1
 
-snippet { "Variable" i
-{{ $0 }}
+snippet {{ "Variable" i
+{{ $1 }}$0
 endsnippet
 
-snippet % "Tag" i
-{% $0 %}
+snippet {% "Tag" i
+{% $1 %}$0
 endsnippet
 
 snippet assign "Assign"
-{% assign $1 = $0 %}
+{% assign $1 = $2 %}$0
 endsnippet
 
 snippet for "For" i
-{% for $1 in $2 %}${VISUAL}$0{% endfor %}
+{% for $1 in $2 %}${VISUAL}$3{% endfor %}$0
 endsnippet
 
 snippet if "If" i
-{% if $1 %}${VISUAL}$0{% endif %}
+{% if $1 %}${VISUAL}$2{% endif %}$0
 endsnippet
 
 snippet else "Else" i
-{% else %}
+{% else %}$0
 endsnippet
 
 snippet elsif "Else if" i
-{% elsif $0 %}
-endsnippet
-
-snippet include "Include" i
-{% include $0 %}
+{% elsif $1 %}$0
 endsnippet
 
 snippet unless "Unless" i
-{% unless $1 %}${VISUAL}$0{% endunless %}
+{% unless $1 %}${VISUAL}$2{% endunless %}$0
+endsnippet
+
+snippet include "Include" i
+{% include $1 %}$0
 endsnippet
