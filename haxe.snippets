@@ -68,10 +68,8 @@ switch ($1)
 }$0
 endsnippet
 
-snippet typed "Typedef"
-${1:public }typedef ${2:Type} = {
-	$3
-}$0
+snippet typedef "Typedef"
+${1:public }typedef ${2:Type} = ${3:;}$0
 endsnippet
 
 snippet enum "Enum"
@@ -79,4 +77,12 @@ ${1:public }enum ${2:Type}
 {
 	$3
 }$0
+endsnippet
+
+snippet trace "Trace"
+trace(${VISUAL}$1);$0
+endsnippet
+
+snippet cast "Cast"
+cast(${VISUAL}$1, $2);$0
 endsnippet
