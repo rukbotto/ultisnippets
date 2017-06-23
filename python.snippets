@@ -1,11 +1,16 @@
+snippet for "For"
+for $1 in $2:
+	${3:pass}$0
+endsnippet
+
 snippet class "Class"
 class ${1:Class}${2:($3)}:
-	${0:pass}
+	${4:pass}$0
 endsnippet
 
 snippet def "Function"
 def ${1:function}($2):
-	${0:pass}
+	${3:pass}$0
 endsnippet
 
 snippet """ "Docstring"
@@ -14,3 +19,6 @@ $1
 """$0
 endsnippet
 
+snippet format "Format"
+"$1".format($2)$0
+endsnippet
