@@ -9,11 +9,15 @@ snippet {{{ "Raw variable" i
 endsnippet
 
 snippet {{# "Section" i
-{{# $1 }}${VISUAL}$2{{/ $1 }}$0
+{{# $1 }}
+	${VISUAL}$2
+{{/ $1 }}$0
 endsnippet
 
 snippet {{^ "Inverted section"
-{{^ $1 }}$2{{/ $1 }}$0
+{{^ $1 }}
+	$2
+{{/ $1 }}$0
 endsnippet
 
 snippet {{> "Partial" i
