@@ -1,55 +1,25 @@
 priority 1
 
-snippet {} "Block"
-$1 {
-	${VISUAL}$2
+snippet block "Block"
+${1:block} {
+	${2:${VISUAL}}
 }$0
 endsnippet
 
-snippet row "Row"
-@include row();$0
+snippet include "Include"
+@include $1;$0
 endsnippet
 
-snippet span-col "Columns"
-@include span-columns($1);$0
+snippet import "Import"
+@import $1;$0
 endsnippet
 
-snippet shift "Shift"
-@include shift($1);$0
+snippet call "Call mixin"
+${1:mixin}${2:($3)};$0
 endsnippet
 
-snippet omega "Omega"
-@include omega($1);$0
-endsnippet
-
-snippet media "Media query"
-@include media($1) {
-	${VISUAL}$2
-}$0
-endsnippet
-
-snippet margin "Margin"
-@include margin($1);$0
-endsnippet
-
-snippet padding "Padding"
-@include padding($1);$0
-endsnippet
-
-snippet position "Position"
-@include position($1);$0
-endsnippet
-
-snippet trans "Transition"
-@include transition($1);$0
-endsnippet
-
-snippet clearfix "Clearfix"
-@include clearfix();$0
-endsnippet
-
-snippet direction "Direction context"
-@include direction-context(${1:right-to-left}) {
-	${VISUAL}$2
+snippet mixin "Define mixin"
+${1:mixin}${2:($3)} {
+	${4:${VISUAL}}
 }$0
 endsnippet
