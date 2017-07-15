@@ -6,8 +6,14 @@ snippet {} "Block"
 }$0
 endsnippet
 
+snippet () "Map"
+(
+	${1:${VISUAL}}
+)$0
+endsnippet
+
 snippet include "Include"
-@include $1;$0
+@include $1${2:;}$0
 endsnippet
 
 snippet import "Import"
