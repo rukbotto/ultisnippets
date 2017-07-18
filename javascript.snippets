@@ -30,26 +30,14 @@ snippet self "Self executing function"
 })($1);$0
 endsnippet
 
-snippet vfobj "Function object"
-var $1 = function ($2) {
+snippet function "Function"
+function $1($2) {
 	${VISUAL}$3
-};$0
+}${4:;}$0
 endsnippet
 
-snippet fobj "Function object"
-$1: function ($2) {
-	${VISUAL}$3
-}$0
-endsnippet
-
-snippet vobj "Object"
-var $1 = {
-	${VISUAL}$2
-};$0
-endsnippet
-
-snippet obj "Object"
-$1: {
+snippet {} "Object"
+{
 	${VISUAL}$2
 }$0
 endsnippet
