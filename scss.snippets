@@ -20,6 +20,12 @@ snippet import "Import"
 @import $1;$0
 endsnippet
 
+snippet function "Function"
+@function ${1:function}($2) {
+	@return ${3:0}
+}$0
+endsnippet
+
 snippet call "Call mixin"
 ${1:mixin}${2:($3)};$0
 endsnippet
