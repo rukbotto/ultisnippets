@@ -30,14 +30,18 @@ snippet self "Self executing function"
 })($1);$0
 endsnippet
 
-snippet function "Function"
-function $1($2) {
-	${VISUAL}$3
-}${4:;}$0
-endsnippet
-
 snippet {} "Object"
 {
-	${VISUAL}$2
+	${VISUAL}$1
 }$0
+endsnippet
+
+snippet [] "List" i
+[${VISUAL}$1]$0
+endsnippet
+
+snippet function "Function"
+function $1($2) {
+	${3:${VISUAL:\/\/ TODO}}
+}${4:;}$0
 endsnippet
