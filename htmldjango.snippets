@@ -1,9 +1,13 @@
 snippet for "For"
-{% for $1 in $2 %}${VISUAL}$3{% endfor %}$0
+{% for ${1:object} in ${2:list} %}
+	${3:${VISUAL}}
+{% endfor %}$0
 endsnippet
 
 snippet if "If" i
-{% if $1 %}${VISUAL}$2{% endif %}$0
+{% if ${1:variable} %}
+	${2:${VISUAL}}
+{% endif %}$0
 endsnippet
 
 snippet else "Else" i
@@ -11,19 +15,21 @@ snippet else "Else" i
 endsnippet
 
 snippet elif "Elif" i
-{% elif $1 %}$0
+{% elif ${1:variable} %}$0
 endsnippet
 
 snippet {% "Tag"
-{% $1 %}$0
+{% ${1:Tag} %}$0
 endsnippet
 
 snippet {{ "Variable" i
-{{ $1 }}$0
+{{ ${1:variable} }}$0
 endsnippet
 
 snippet block "Block" i
-{% block %}${VISUAL}$1{% endblock %}$0
+{% block %}
+	${1:${VISUAL}}
+{% endblock %}$0
 endsnippet
 
 snippet csrf_token "CSRF Token"
@@ -31,37 +37,37 @@ snippet csrf_token "CSRF Token"
 endsnippet
 
 snippet static "Static" i
-{% static "$1" %}$0
+{% static ${1:path} %}$0
 endsnippet
 
 snippet load "Load"
-{% load $1 %}$0
+{% load ${1:library} %}$0
 endsnippet
 
 snippet extends "Extends"
 {% extends "$1" %}$0
 endsnippet
 
-snippet attr "Tag attribute" i
-${1:attr}="$2"$0
-endsnippet
-
 snippet url "Url" i
-{% url $1 %}$0
+{% url ${1:url_name} %}$0
 endsnippet
 
 snippet comment "Comment"
-{% comment %}${VISUAL}$1{% endcomment %}$0
+{% comment %}
+	${1:${VISUAL}}
+{% endcomment %}$0
 endsnippet
 
 snippet cycle "Cycle tag"
-{% cycle $1 %}$0
+{% cycle ${1:arguments} %}$0
 endsnippet
 
 snippet with "With"
-{% with $1 %}$2{% endwith %}$0
+{% with ${1:variable} %}
+	$2
+{% endwith %}$0
 endsnippet
 
 snippet include "Include"
-{% include "$1" %}$0
+{% include ${1:template} %}$0
 endsnippet
