@@ -15,74 +15,74 @@ endsnippet
 snippet get "Getter"
 private function get_${1:name}():${2:Type}
 {
-	return $3;
+	return _$1;
 }$0
 endsnippet
 
 snippet set "Setter"
 private function set_${1:name}(value:${2:Type}):$2
 {
-	return $3 = value;
+	return _$1 = value;
 }$0
 endsnippet
 
 snippet function "Function"
 ${1:public }${2:static }function ${3:name}($4)${5::${6:Type}}
 {
-	$7
+	${7:// TODO}
 }$0
 endsnippet
 
 snippet if "If"
 if ($1)
 {
-	${VISUAL}$2
+	${2:${VISUAL:\/\/ TODO}}
 }$0
 endsnippet
 
 snippet else "Else"
 else
 {
-	${VISUAL}$1
+	${1:${VISUAL:\/\/ TODO}}
 }$0
 endsnippet
 
 snippet elseif "Else if"
 else if ($1)
 {
-	${VISUAL}$2
+	${2:${VISUAL:\/\/ TODO}}
 }$0
 endsnippet
 
 snippet for "For"
 for ($1 in $2)
 {
-	$3
+	${3:// TODO}
 }$0
 endsnippet
 
 snippet switch "Switch"
-switch ($1)
+switch (${1:subject})
 {
-	$2
+	${2:// TODO}
 }$0
 endsnippet
 
 snippet typedef "Typedef"
-${1:public }typedef ${2:Type} = ${3:;}$0
+${1:public }typedef ${2:Type} = ${3:\{\}}$0
 endsnippet
 
 snippet enum "Enum"
 ${1:public }enum ${2:Type}
 {
-	$3
+	${3:// TODO}
 }$0
 endsnippet
 
 snippet trace "Trace"
-trace(${VISUAL}$1);$0
+trace(${1:${VISUAL}});$0
 endsnippet
 
 snippet cast "Cast"
-cast(${VISUAL}$1, $2);$0
+cast(${1:${VISUAL:expr}}, ${2:Type});$0
 endsnippet
