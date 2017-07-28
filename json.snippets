@@ -2,28 +2,32 @@ priority 1
 
 snippet {} "Object"
 {
-	${VISUAL}$1
+	${1:${VISUAL}}
 }$0
 endsnippet
 
 snippet v{} "Variable object"
 "$1": {
-	${VISUAL}$2
+	${2:${VISUAL}}
 }$0
 endsnippet
 
 snippet [] "List"
 [
-	${VISUAL}$1
+	${1:${VISUAL}}
 ]$0
 endsnippet
 
 snippet v[] "Variable list"
 "$1": [
-	${VISUAL}$2
+	${2:${VISUAL}}
 ]$0
 endsnippet
 
 snippet v "Variable"
 "$1": $0
+endsnippet
+
+snippet v"" "Variable string"
+"$1": "$2"$0
 endsnippet
