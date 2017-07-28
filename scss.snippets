@@ -1,5 +1,9 @@
 priority 1
 
+snippet [] "Attribute" i
+[${1:${VISUAL}}]$0
+endsnippet
+
 snippet {} "Block"
 {
 	${1:${VISUAL}}
@@ -34,4 +38,8 @@ snippet mixin "Define mixin"
 ${1:mixin}${2:($3)} {
 	${4:${VISUAL}}
 }$0
+endsnippet
+
+snippet #{} "Interpolation"
+#{${1:${VISUAL}}}$0
 endsnippet
