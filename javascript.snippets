@@ -1,5 +1,9 @@
 priority 1
 
+snippet ${ "Interpolation" i
+\$\{$1\}
+endsnippet
+
 snippet for "For"
 for (${1:var i = 0}; ${2:i < 10}; ${3:i++}) {
 	$4
@@ -46,7 +50,7 @@ snippet => "ES6 function" i
 }$0
 endsnippet
 
-snippet function "Function"
+snippet function "Function" i
 function $1($2) {
 	${3:${VISUAL:\/\/ TODO}}
 }$0
