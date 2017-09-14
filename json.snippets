@@ -6,7 +6,7 @@ snippet {} "Object"
 }$0
 endsnippet
 
-snippet v{} "Variable object"
+snippet :{ "Variable object"
 "$1": {
 	${2:${VISUAL}}
 }$0
@@ -18,16 +18,16 @@ snippet [] "List"
 ]$0
 endsnippet
 
-snippet v[] "Variable list"
+snippet :[ "Variable list"
 "$1": [
 	${2:${VISUAL}}
 ]$0
 endsnippet
 
-snippet v "Variable"
+snippet : "Variable"
 "$1": $0
 endsnippet
 
-snippet v"" "Variable string"
+snippet :" "Variable string"
 "$1": "$2"$0
 endsnippet
