@@ -4,8 +4,8 @@ for $1 in $2:
 endsnippet
 
 snippet class "Class"
-class ${1:Class}${2:($3)}:
-	${4:pass}$0
+class ${1:Class}:
+	${2:pass}$0
 endsnippet
 
 snippet def "Function"
@@ -25,4 +25,8 @@ endsnippet
 
 snippet map "Map"
 map($1, ${VISUAL}$2)$0
+endsnippet
+
+snippet super "Super constructor"
+super(${1:Class}, self)$0
 endsnippet
