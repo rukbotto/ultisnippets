@@ -1,16 +1,33 @@
+priority 1
+
+snippet if "If"
+if ${1:True}:
+	${2:${VISUAL:pass}}
+endsnippet
+
+snippet elif "Else if"
+elif ${1:True}:
+	${2:${VISUAL:pass}}
+endsnippet
+
+snippet else "Else"
+else:
+	${2:${VISUAL:pass}}
+endsnippet
+
 snippet for "For"
-for $1 in $2:
-	${3:pass}$0
+for ${1:item} in ${2:list}:
+	${3:pass}
 endsnippet
 
 snippet class "Class"
 class ${1:Class}:
-	${2:pass}$0
+	${2:pass}
 endsnippet
 
 snippet def "Function"
 def ${1:function}($2):
-	${3:pass}$0
+	${3:pass}
 endsnippet
 
 snippet """ "Docstring"
@@ -24,7 +41,7 @@ snippet format "Format"
 endsnippet
 
 snippet map "Map"
-map($1, ${VISUAL}$2)$0
+map($1, ${2:${VISUAL}})$0
 endsnippet
 
 snippet super "Super constructor"
