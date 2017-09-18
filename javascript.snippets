@@ -12,36 +12,32 @@ endsnippet
 
 snippet if "If"
 if ($1) {
-	${VISUAL}$2
+	${2:${VISUAL}}
 }$0
 endsnippet
 
 snippet else "Else"
 else {
-	${VISUAL}$1
-}$0
-endsnippet
-
-snippet elseif "Else if"
-else if ($1) {
-	${VISUAL}$2
+	${1:${VISUAL}}
 }$0
 endsnippet
 
 snippet self "Self executing function"
 (function ($1) {
-	${VISUAL}$2
+	${2:${VISUAL}}
 })($1);$0
 endsnippet
 
 snippet {} "Object" i
 {
-	${VISUAL}$1
+	${1:${VISUAL}}
 }$0
 endsnippet
 
 snippet [] "List" i
-[${VISUAL}$1]$0
+[
+	${1:${VISUAL}}
+]$0
 endsnippet
 
 snippet => "ES6 function" i
