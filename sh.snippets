@@ -1,0 +1,23 @@
+priority 1
+
+snippet #! "Shebang"
+#!${1:/usr/bin/env bash}
+endsnippet
+
+snippet function "Function"
+function ${1:name} {
+	${2:# TODO}
+}
+endsnippet
+
+snippet if "If"
+if ${1:[test]}
+then
+	${2:${VISUAL:# TODO}}
+fi
+endsnippet
+
+snippet else "Else"
+else
+	${1:${VISUAL:# TODO}}
+endsnippet
