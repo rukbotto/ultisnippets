@@ -1,3 +1,5 @@
+priority 1
+
 snippet for "For"
 {% for ${1:object} in ${2:list} %}
 	${3:${VISUAL}}
@@ -37,7 +39,7 @@ snippet csrf_token "CSRF Token" i
 endsnippet
 
 snippet static "Static" i
-{% static ${1:path} %}$0
+{% static '${1:path}' %}$0
 endsnippet
 
 snippet load "Load"
@@ -49,7 +51,7 @@ snippet extends "Extends"
 endsnippet
 
 snippet url "Url" i
-{% url ${1:url_name} %}$0
+{% url '${1:url_name}' %}$0
 endsnippet
 
 snippet comment "Comment"
@@ -69,5 +71,5 @@ snippet with "With"
 endsnippet
 
 snippet include "Include"
-{% include ${1:template} %}$0
+{% include '${1:template}' %}$0
 endsnippet
