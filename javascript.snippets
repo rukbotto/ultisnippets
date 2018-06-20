@@ -39,3 +39,21 @@ function $1($2) {
 	${3:${VISUAL}}
 }$0
 endsnippet
+
+snippet proto "Prototype"
+${1:Class}.prototype.${2:function} = function ($3) {
+	${4:${VISUAL}}
+};$0
+endsnippet
+
+snippet super "Initialize parent class"
+${1:Class}.prototype = new ${2:ParentClass}();$0
+endsnippet
+
+snippet apply "Call parent constructor"
+${1:ParentClass}.apply(this, Array.prototype.slice.call(arguments));$0
+endsnippet
+
+snippet call "Call parent method"
+${1:ParentClass}.prototype.${2:parentMethod}.call(this);$0
+endsnippet
