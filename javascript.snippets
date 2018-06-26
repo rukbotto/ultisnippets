@@ -58,14 +58,20 @@ snippet call "Call parent method"
 ${1:ParentClass}.prototype.${2:parentMethod}.call(this);$0
 endsnippet
 
-snippet obj "Object" i
+snippet obj "Object"
 ${1:const} ${2:objName} = {
 	${3:${VISUAL}}
 };$0
 endsnippet
 
-snippet list "List" i
+snippet list "List"
 ${1:const} ${2:listName} = [
 	${3:${VISUAL}}
 ];$0
+endsnippet
+
+snippet prom "Promise"
+new Promise((resolve, reject) => {
+	${1:${VISUAL}}
+});$0
 endsnippet
