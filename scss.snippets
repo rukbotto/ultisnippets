@@ -1,41 +1,41 @@
 priority 1
 
-snippet [] "Attribute" i
+snippet [ "Attribute" i
 [${1:${VISUAL}}]$0
 endsnippet
 
-snippet {} "Block"
+snippet { "Block"
 {
 	${1:${VISUAL}}
 }$0
 endsnippet
 
-snippet () "Map"
+snippet ( "Map"
 (
 	${1:${VISUAL}}
 )$0
 endsnippet
 
-snippet include "Include"
-@include $1${2:;}$0
+snippet inc "Include"
+@include $1
 endsnippet
 
-snippet import "Import"
-@import $1;$0
+snippet imp "Import"
+@import '$1';$0
 endsnippet
 
-snippet function "Function"
+snippet fun "Function"
 @function ${1:function}($2) {
 	@return ${3:0}
 }$0
 endsnippet
 
-snippet mixin "Mixin"
+snippet mix "Mixin"
 @mixin ${1:mixin} {
 	${2:// TODO}
 }$0
 endsnippet
 
-snippet #{ "Interpolation"
+snippet # "Interpolation"
 #{${1:${VISUAL}}}$0
 endsnippet
