@@ -1,35 +1,43 @@
 priority 1
 
-snippet {{ "Variable" i
+snippet { "Variable" i
 {{ ${1:${VISUAL:variable}} }}$0
 endsnippet
 
-snippet {% "Tag" i
-{% $1 %}$0
+snippet % "Tag" i
+{% ${1:tag_name} %}$0
 endsnippet
 
 snippet assign "Assign"
-{% assign $1 = $2 %}$0
+{% assign ${1:variable} = ${2:expression} %}$0
 endsnippet
 
 snippet for "For" i
-{% for $1 in $2 %}${VISUAL}$3{% endfor %}$0
+{% for ${1:item} in ${2:collection} %}
+	${3:${VISUAL}}
+{% endfor %}$0
 endsnippet
 
 snippet if "If" i
-{% if $1 %}${VISUAL}$2{% endif %}$0
+{% if ${1:true} %}
+	${2:${VISUAL}}
+{% endif %}$0
 endsnippet
 
 snippet else "Else" i
-{% else %}$0
+{% else %}
+	$0
 endsnippet
 
 snippet elsif "Else if" i
-{% elsif $1 %}$0
+{% elsif ${1:true} %}
+	$0
 endsnippet
 
 snippet unless "Unless" i
-{% unless $1 %}${VISUAL}$2{% endunless %}$0
+{% unless ${1:false} %}
+	${2:${VISUAL}}
+{% endunless %}$0
 endsnippet
 
 snippet include "Include" i
