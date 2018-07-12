@@ -54,18 +54,18 @@ snippet apply "Call parent constructor"
 ${1:ParentClass}.apply(this, Array.prototype.slice.call(arguments));$0
 endsnippet
 
-snippet call "Call parent method"
-${1:ParentClass}.prototype.${2:parentMethod}.call(this);$0
+snippet call "Call method"
+${1:Class}.prototype.${2:parentMethod}.call(this${3:, args});$0
 endsnippet
 
 snippet obj "Object"
-${1:const} ${2:objName} = {
+${1:const }${2:name} = {
 	${3:${VISUAL}}
 };$0
 endsnippet
 
 snippet list "List"
-${1:const} ${2:listName} = [
+${1:const }${2:name} = [
 	${3:${VISUAL}}
 ];$0
 endsnippet
@@ -82,4 +82,14 @@ endsnippet
 
 snippet req "Require statement"
 const ${1:name} = require('${2:module}')$3;$0
+endsnippet
+
+snippet :{ "Nested object"
+${1:name}: {
+	${2:${VISUAL}}
+}$0
+endsnippet
+
+snippet : "Object entry" i
+${1:name}: ${2:value}
 endsnippet
