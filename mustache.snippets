@@ -1,33 +1,33 @@
 priority 1
 
-snippet {{ "Variable" i
+snippet { "Variable" i
 {{ ${1:variable} }}$0
 endsnippet
 
-snippet {{. "Helper" i
+snippet help "Helper" i
 {{${1:helper} $2}}$0
 endsnippet
 
-snippet {{{ "Raw variable" i
+snippet raw "Raw variable" i
 {{{ ${1:variable} }}}$0
 endsnippet
 
-snippet {{# "Section" i
+snippet # "Section" i
 {{#$1}}
 ${2:${VISUAL}}
 {{/$1}}$0
 endsnippet
 
-snippet {{^ "Inverted section" i
+snippet ^ "Inverted section" i
 {{^$1}}
 ${2:${VISUAL}}
 {{/$1}}$0
 endsnippet
 
-snippet {{> "Partial" i
+snippet > "Partial" i
 {{> $1}}$0
 endsnippet
 
-snippet {{! "Comment" i
+snippet ! "Comment" i
 {{! ${1:${VISUAL}}${2:\}\}}$0
 endsnippet
