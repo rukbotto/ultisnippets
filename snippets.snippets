@@ -1,7 +1,15 @@
 priority 1
 
-snippet snippet "Snippet"
+snippet snip "Snippet"
 `!p snip.rv = "snippet"` $1 "$2"${3: i}
 $4
 `!p snip.rv = "endsnippet"`$0
+endsnippet
+
+snippet $ "Placeholder" i
+${${1:id}${2::// TODO}}$0
+endsnippet
+
+snippet 0 "Last placeholder" i
+$0
 endsnippet
