@@ -1,10 +1,10 @@
 priority 1
 
-snippet #{ "String interpolation" i
+snippet # "String interpolation" i
 #{${1:${VISUAL}}}$0
 endsnippet
 
-snippet %r "Regexp" i
+snippet r "Regexp" i
 %r{${1:${VISUAL}}}$0
 endsnippet
 
@@ -26,7 +26,21 @@ def ${1:name}
 end$0
 endsnippet
 
-snippet do "Block"
+snippet => "Hash entry" i
+${1:key} => ${2:value}
+endsnippet
+
+snippet { "Simple block" i
+{
+	${1:${VISUAL:# TODO}}
+}$0
+endsnippet
+
+snippet | "Inline block" i
+{ |${1:variable}| ${3: ${VISUAL:# TODO}} }$0
+endsnippet
+
+snippet do "Multiline block"
 do${1: |${2:variable}|}
 	${3:${VISUAL:# TODO}}
 end$0

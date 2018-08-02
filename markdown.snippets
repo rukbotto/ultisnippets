@@ -6,22 +6,14 @@ ${VISUAL}$2
 \`\`\`$0
 endsnippet
 
-snippet []() "Link expanded" i
-[${VISUAL}$1]($2)$0
+snippet [ "Link" i
+[${1:${VISUAL}}]${2:($3)}$0
 endsnippet
 
-snippet [][] "Link compact" i
-[${VISUAL}$1][$2]$0
+snippet ! "Image"
+![${1:${VISUAL}}]${2:($3)}$0
 endsnippet
 
-snippet ![]() "Image expanded"
-![${VISUAL}$1]($2)$0
-endsnippet
-
-snippet ![][] "Image compact"
-![${VISUAL}$1][$2]$0
-endsnippet
-
-snippet []: "Link ref"
-[$1]: ${VISUAL}$0
+snippet : "Link ref"
+[$1]: ${VISUAL}
 endsnippet
