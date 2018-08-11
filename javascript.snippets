@@ -58,15 +58,15 @@ snippet call "Call method"
 ${1:Class}.prototype.${2:method}.call(this${3:, args});$0
 endsnippet
 
-snippet obj "Object"
-${1:const }${2:name} = {
-	${3:${VISUAL}}
+snippet ={ "Object"
+= {
+	${1:${VISUAL}}
 };$0
 endsnippet
 
-snippet list "List"
-${1:const }${2:name} = [
-	${3:${VISUAL}}
+snippet =[ "List"
+= [
+	${1:${VISUAL}}
 ];$0
 endsnippet
 
@@ -84,9 +84,9 @@ snippet req "Require statement"
 ${1:const }${2:name}${3: = }require('${4:module}')$5;$0
 endsnippet
 
-snippet :{ "Nested object"
-${1:name}: {
-	${2:${VISUAL}}
+snippet :{ "Nested object" i
+: {
+	${1:${VISUAL}}
 }$0
 endsnippet
 
