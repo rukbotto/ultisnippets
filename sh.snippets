@@ -17,6 +17,12 @@ then
 fi
 endsnippet
 
+snippet elif "Else if"
+elif ${1:test}
+then
+	${2:${VISUAL:# TODO}}
+endsnippet
+
 snippet else "Else"
 else
 	${1:${VISUAL:# TODO}}
@@ -34,4 +40,11 @@ snippet *) "Case pattern"
 ${1:*})
 	${2:# TODO}
 	;;
+endsnippet
+
+snippet for "For loop"
+for ${1:i} in ${2:word}
+do
+	${3:${VISUAL:# TODO}}
+done
 endsnippet
