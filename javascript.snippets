@@ -70,8 +70,8 @@ snippet =[ "List"
 ];$0
 endsnippet
 
-snippet promise "Promise"
-new Promise((resolve, reject) => {
+snippet Promise "Promise"
+Promise((resolve, reject) => {
 	${1:${VISUAL}}
 });$0
 endsnippet
@@ -81,7 +81,7 @@ snippet strict "Strict statement"
 endsnippet
 
 snippet req "Require statement"
-${1:const }${2:name}${3: = }require('${4:module}')$5;$0
+require('${1:module}')$2;$0
 endsnippet
 
 snippet :{ "Nested object" i
