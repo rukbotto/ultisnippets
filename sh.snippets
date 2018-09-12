@@ -32,11 +32,11 @@ snippet case "Case"
 case ${1:`!p snip.rv = "$1"`} in
 	${2:*})
 		${3:# TODO}
-	;;
-esac
+		;;$4
+esac$0
 endsnippet
 
-snippet *) "Case pattern"
+snippet ) "Case pattern"
 ${1:*})
 	${2:# TODO}
 	;;
