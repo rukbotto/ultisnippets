@@ -6,6 +6,10 @@ snippet for "For"
 {% endfor %}$0
 endsnippet
 
+snippet empty "Empty for" i
+{% empty %}$0
+endsnippet
+
 snippet if "If" i
 {% if ${1:variable} %}
 	${2:${VISUAL}}
@@ -20,11 +24,11 @@ snippet elif "Elif" i
 {% elif ${1:variable} %}$0
 endsnippet
 
-snippet {% "Tag"
+snippet % "Tag"
 {% ${1:Tag} %}$0
 endsnippet
 
-snippet {{ "Variable" i
+snippet { "Variable" i
 {{ ${1:variable} }}$0
 endsnippet
 
