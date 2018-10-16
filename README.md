@@ -1,3 +1,3 @@
-# Ultisnippets
+# Vim Snippets
 
-Rukbotto's UltiSnips snippets
+Code snippets for Vim.
