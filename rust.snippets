@@ -1,0 +1,17 @@
+priority 1
+
+snippet match "Match expression" i
+match ${1:comparison} {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet => "Match arm" i
+${1:condition} => ${2:result}
+endsnippet
+
+snippet loop "Loop expression" i
+loop {
+	${1:${VISUAL}}
+}
+endsnippet
