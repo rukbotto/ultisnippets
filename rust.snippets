@@ -2,7 +2,7 @@ priority 1
 
 snippet match "Match expression" i
 match ${1:comparison} {
-	${2:${VISUAL}}
+	${2:${VISUAL:arms}}
 }
 endsnippet
 
@@ -12,6 +12,12 @@ endsnippet
 
 snippet loop "Loop expression" i
 loop {
-	${1:${VISUAL}}
+	${1:${VISUAL:body}}
+}
+endsnippet
+
+snippet fn "Function"
+${1:pub }fn ${2:name}(${3:params}) {
+	${4:${VISUAL:body}}
 }
 endsnippet
