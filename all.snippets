@@ -2,26 +2,6 @@ snippet #! "Shebang"
 #!${1:/bin/sh}
 endsnippet
 
-snippet " "Quotes" i
-"${1:${VISUAL}}"$0
-endsnippet
-
-snippet ' "Single quotes" i
-'${1:${VISUAL}}'$0
-endsnippet
-
-snippet { "Brackets" i
-{${1:${VISUAL}}}$0
-endsnippet
-
-snippet ( "Round brackets" i
-(${1:${VISUAL}})$0
-endsnippet
-
-snippet [ "Square brackets" i
-[${1:${VISUAL}}]$0
-endsnippet
-
 snippet < "Angular brackets" i
 <${1:${VISUAL}}>$0
 endsnippet
@@ -32,20 +12,4 @@ endsnippet
 
 snippet / "Slash brackets" i
 /${1:${VISUAL}}/$0
-endsnippet
-
-snippet ` "Backticks" i
-\`${1:${VISUAL}}\`$0
-endsnippet
-
-snippet "{ " "Object" i
-{
-	${1:${VISUAL}}
-}$0
-endsnippet
-
-snippet "[ " "List" i
-[
-	${1:${VISUAL}}
-]$0
 endsnippet

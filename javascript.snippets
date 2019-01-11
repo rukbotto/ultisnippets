@@ -58,18 +58,6 @@ snippet call "Call method"
 ${1:Class}.prototype.${2:method}.call(this${3:, args});$0
 endsnippet
 
-snippet "= {" "Object"
-= {
-	${1:${VISUAL}}
-};$0
-endsnippet
-
-snippet "= [" "List"
-= [
-	${1:${VISUAL}}
-];$0
-endsnippet
-
 snippet Promise "Promise"
 Promise((resolve, reject) => {
 	${1:${VISUAL}}
@@ -82,12 +70,6 @@ endsnippet
 
 snippet req "Require statement"
 require('${1:module}')$2;$0
-endsnippet
-
-snippet ": {" "Nested object" i
-: {
-	${1:${VISUAL}}
-}$0
 endsnippet
 
 snippet : "Object entry" i
