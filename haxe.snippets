@@ -29,42 +29,42 @@ endsnippet
 snippet function "Function"
 ${1:public }${2:static }function ${3:name}($4)${5::${6:Type}}
 {
-	${7:// TODO}
+	${7:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet if "If"
 if ($1)
 {
-	${2:${VISUAL:\/\/ TODO}}
+	${2:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet else "Else"
 else
 {
-	${1:${VISUAL:\/\/ TODO}}
+	${1:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet elseif "Else if"
 else if ($1)
 {
-	${2:${VISUAL:\/\/ TODO}}
+	${2:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet for "For"
 for ($1 in $2)
 {
-	${3:// TODO}
+	${3:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet switch "Switch"
 switch (${1:subject})
 {
-	${2:// TODO}
+	${2:${VISUAL:body}}
 }$0
 endsnippet
 
@@ -75,7 +75,7 @@ endsnippet
 snippet enum "Enum"
 ${1:public }enum ${2:Type}
 {
-	${3:// TODO}
+	${3:${VISUAL:body}}
 }$0
 endsnippet
 

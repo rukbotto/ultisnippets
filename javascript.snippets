@@ -12,37 +12,37 @@ endsnippet
 
 snippet if "If"
 if ($1) {
-	${2:${VISUAL}}
+	${2:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet else "Else"
 else {
-	${1:${VISUAL}}
+	${1:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet self "Self executing function"
 (function ($1) {
-	${2:${VISUAL}}
+	${2:${VISUAL:body}}
 })($1);$0
 endsnippet
 
 snippet => "ES6 function" i
 ($1) => {
-	${3:${VISUAL}}
+	${3:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet fun "Function" i
 function $1($2) {
-	${3:${VISUAL}}
+	${3:${VISUAL:body}}
 }$0
 endsnippet
 
 snippet proto "Prototype"
 ${1:Class}.prototype.${2:function} = function ($3) {
-	${4:${VISUAL}}
+	${4:${VISUAL:body}}
 };$0
 endsnippet
 
@@ -60,7 +60,7 @@ endsnippet
 
 snippet Promise "Promise"
 Promise((resolve, reject) => {
-	${1:${VISUAL}}
+	${1:${VISUAL:body}}
 });$0
 endsnippet
 

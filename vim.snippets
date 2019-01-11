@@ -2,29 +2,29 @@ priority 1
 
 snippet if "If"
 if ${1:condition}
-	${2:${VISUAL:" TODO}}
+	${2:${VISUAL:body}}
 endif$0
 endsnippet
 
 snippet elseif "Else if"
 elseif ${1:condition}
-	${2:${VISUAL:" TODO}}
+	${2:${VISUAL:body}}
 endsnippet
 
 snippet else "Else"
 else
-	${1:${VISUAL:" TODO}}
+	${1:${VISUAL:body}}
 endsnippet
 
 snippet function "Function"
 function! ${1:function}($2)
-	${3:${VISUAL:" TODO}}
+	${3:${VISUAL:body}}
 endfunction$0
 endsnippet
 
 snippet augroup "Autocommand group"
 augroup ${1:name}
 	autocmd!
-	${2:" TODO}
+	${2:${VISUAL:body}}
 augroup END$0
 endsnippet

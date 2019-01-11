@@ -10,13 +10,13 @@ endsnippet
 
 snippet for "For" i
 {% for ${1:item} in ${2:collection} %}
-	${3:${VISUAL}}
+	${3:${VISUAL:body}}
 {% endfor %}$0
 endsnippet
 
 snippet if "If" i
 {% if ${1:true} %}
-	${2:${VISUAL}}
+	${2:${VISUAL:body}}
 {% endif %}$0
 endsnippet
 
@@ -32,7 +32,7 @@ endsnippet
 
 snippet unless "Unless" i
 {% unless ${1:false} %}
-	${2:${VISUAL}}
+	${2:${VISUAL:body}}
 {% endunless %}$0
 endsnippet
 

@@ -6,45 +6,45 @@ endsnippet
 
 snippet fun "Function"
 ${1:name}() {
-	${2:# TODO}
+	${2:body}
 }
 endsnippet
 
 snippet if "If"
 if ${1:[ test ]}
 then
-	${2:${VISUAL:# TODO}}
+	${2:${VISUAL:body}}
 fi
 endsnippet
 
 snippet elif "Else if"
 elif ${1:test}
 then
-	${2:${VISUAL:# TODO}}
+	${2:${VISUAL:body}}
 endsnippet
 
 snippet else "Else"
 else
-	${1:${VISUAL:# TODO}}
+	${1:${VISUAL:body}}
 endsnippet
 
 snippet case "Case"
 case ${1:`!p snip.rv = "$1"`} in
 	${2:*})
-		${3:# TODO}
+		${3:${VISUAL:body}}
 		;;$4
 esac$0
 endsnippet
 
 snippet ) "Case pattern"
 ${1:*})
-	${2:# TODO}
+	${2:${VISUAL:body}}
 	;;
 endsnippet
 
 snippet for "For loop"
 for ${1:i} in ${2:word}
 do
-	${3:${VISUAL:# TODO}}
+	${3:${VISUAL:body}}
 done
 endsnippet
