@@ -7,7 +7,7 @@ snippet if "If" i
 endsnippet
 
 snippet elif "Else if" i
-{% elif $1 %}$0
+{% elif ${1:condition} %}$0
 endsnippet
 
 snippet else "Else" i
@@ -23,11 +23,11 @@ snippet block "Block"
 endsnippet
 
 snippet extends "Extend from template"
-{% extends "$1" %}$0
+{% extends "${1:template}" %}$0
 endsnippet
 
 snippet include "Include"
-{% include "$1" %}$0
+{% include "${1:template}" %}$0
 endsnippet
 
 snippet set "Set"
